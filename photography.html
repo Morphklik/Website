@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography | MorphKlik Media</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body data-service="photography">
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo1.png" alt="MorphKlik Media" />
+      <span class="logo-tagline">Click that creates impact</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#about" class="nav-link">About</a></li>
+      <li><a href="index.html#services" class="nav-link">Services</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Be Our Client →</a></li>
+    </ul>
+      <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html#about" class="mobile-link">About</a></li>
+      <li><a href="index.html#services" class="mobile-link">Services</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <header class="service-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> <span>/</span> Photography</div>
+      <h1 class="section-title">Professional <em>Photography</em></h1>
+      <p class="section-sub" style="max-width:700px; margin: 1.5rem auto 0;">Capturing the essence of your brand through high-end product, lifestyle, and architectural photography that stands out in a crowded market.</p>
+    </div>
+  </header>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="project-grid" id="project-grid">
+        <!-- Projects loaded dynamically from script.js -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo1.png" alt="MorphKlik Media" />
+          <span class="logo-tagline">Click that creates impact</span>
+        </a>
+        <p class="footer-tagline">Strategy. Content. Results.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MorphKlik Media. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="media-modal" id="media-modal">
+    <div class="modal-content">
+      <span class="modal-close" id="modal-close">Close ✕</span>
+      <img src="" alt="Full Screen Media" class="modal-media" id="modal-img">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
